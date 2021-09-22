@@ -1,0 +1,11 @@
+コンパイル手順
+
+file1.cu
+file2.cu
+main.cpp
+
+%g++ -c main.cpp
+%nvcc -c file1.cu
+%nvcc -c file2.cu
+%nvcc main.o file1.o file2.o -o sample
+%./sample
